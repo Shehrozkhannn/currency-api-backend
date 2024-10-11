@@ -31,7 +31,7 @@ app.get('/api/convert',async (req,res)=> {
     conversionHistory.push(record);
     res.json({ convertedAmount, record });
   } catch(error){
-    res.status(500).json({ message: 'Error fetching currency data', error: error.message });
+    res.status(500).json({ message: 'EError fetching currency data', error: error.message });
   }
 });
 
